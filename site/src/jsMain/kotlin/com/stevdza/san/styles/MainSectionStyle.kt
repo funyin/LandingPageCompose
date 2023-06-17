@@ -1,5 +1,6 @@
 package com.stevdza.san.styles
 
+import androidx.compose.runtime.Composable
 import com.stevdza.san.models.Theme
 import com.varabyte.kobweb.compose.css.CSSTransition
 import com.varabyte.kobweb.compose.ui.Modifier
@@ -16,8 +17,7 @@ import org.jetbrains.compose.web.css.*
 
 val NavigationItemStyle by ComponentStyle {
     base {
-        Modifier
-            .color(Theme.Secondary.rgb)
+        Modifier.color(Theme.Secondary.rgb)
             .transition(CSSTransition(property = "color", duration = 200.ms))
     }
     anyLink {
@@ -31,20 +31,17 @@ val NavigationItemStyle by ComponentStyle {
 @OptIn(ExperimentalComposeWebApi::class)
 val LogoStyle by ComponentStyle {
     base {
-        Modifier
-            .transform { rotate(0.deg) }
+        Modifier.transform { rotate(0.deg) }
             .transition(CSSTransition(property = "transform", duration = 200.ms))
     }
     hover {
-        Modifier
-            .transform { rotate((-10).deg) }
+        Modifier.transform { rotate((-10).deg) }
     }
 }
 
 val SocialLinkStyle by ComponentStyle {
     base {
-        Modifier
-            .color(Theme.Gray.rgb)
+        Modifier.color(Theme.Gray.rgb)
             .transition(CSSTransition(property = "color", duration = 200.ms))
     }
     hover {
@@ -54,9 +51,8 @@ val SocialLinkStyle by ComponentStyle {
 
 val MainButtonStyle by ComponentStyle {
     base {
-        Modifier
-            .width(100.px)
-            .transition(CSSTransition(property = "width", duration = 200.ms))
+        Modifier.width(100.px)
+            .transition(CSSTransition(property = "width", 200.ms))
     }
     hover {
         Modifier.width(120.px)
@@ -66,15 +62,19 @@ val MainButtonStyle by ComponentStyle {
 @OptIn(ExperimentalComposeWebApi::class)
 val MainImageStyle by ComponentStyle {
     base {
-        Modifier
-            .styleModifier {
-                filter { grayscale(100.percent) }
+        Modifier.styleModifier {
+            filter {
+                grayscale(100.percent)
             }
-            .transition(CSSTransition(property = "filter", duration = 200.ms))
+        }
+            .transition(CSSTransition(property = "filter", 200.ms))
     }
     hover {
         Modifier.styleModifier {
-            filter { grayscale(0.percent) }
+            filter {
+                grayscale(0.percent)
+            }
         }
+
     }
 }
