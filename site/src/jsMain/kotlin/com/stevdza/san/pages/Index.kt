@@ -1,7 +1,10 @@
 package com.stevdza.san.pages
 
 import androidx.compose.runtime.Composable
+import com.stevdza.san.sections.AboutSection
 import com.stevdza.san.sections.MainSection
+import com.stevdza.san.sections.PortfolioSection
+import com.stevdza.san.sections.ServicesSection
 import com.varabyte.kobweb.compose.foundation.layout.Arrangement
 import com.varabyte.kobweb.compose.foundation.layout.Column
 import com.varabyte.kobweb.compose.ui.Alignment
@@ -18,5 +21,8 @@ fun HomePage() {
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         MainSection()
+        AboutSection()
+        ServicesSection()
+        PortfolioSection()
     }
 }

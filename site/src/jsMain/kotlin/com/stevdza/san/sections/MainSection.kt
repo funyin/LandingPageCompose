@@ -37,7 +37,7 @@ fun MainSection() {
         contentAlignment = Alignment.TopCenter
     ) {
         MainBackground()
-        MainContent(breakpoint = rememberBreakpoint())
+        MainContent()
     }
 }
 
@@ -51,7 +51,8 @@ fun MainBackground() {
 }
 
 @Composable
-fun MainContent(breakpoint: Breakpoint) {
+fun MainContent() {
+    val breakpoint = rememberBreakpoint()
     Column(
         modifier = Modifier.fillMaxSize(),
         horizontalAlignment = Alignment.CenterHorizontally,
