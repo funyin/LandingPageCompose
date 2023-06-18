@@ -31,7 +31,7 @@ fun ObserveViewPortEntered(
     }
 }
 
-suspend fun animatePercentage(percent: Float, delay: Long, onUpdate: (Int) -> Unit) {
+suspend fun animateNumber(percent: Float, delay: Long, onUpdate: (Int) -> Unit) {
     (0..percent.toInt()).forEach {
         delay(delay)
         onUpdate(it)

@@ -7,6 +7,7 @@ import com.stevdza.san.styles.LogoStyle
 import com.stevdza.san.styles.NavigationItemStyle
 import com.stevdza.san.util.Constants
 import com.stevdza.san.util.Res
+import com.varabyte.kobweb.compose.css.Cursor
 import com.varabyte.kobweb.compose.css.FontWeight
 import com.varabyte.kobweb.compose.css.TextDecorationLine
 import com.varabyte.kobweb.compose.foundation.layout.Arrangement
@@ -25,7 +26,7 @@ import org.jetbrains.compose.web.css.percent
 import org.jetbrains.compose.web.css.px
 
 @Composable
-fun Header() {
+fun Header(onMenuClicked: () -> Unit) {
     val breakpoint = rememberBreakpoint()
     Row(
         modifier = Modifier.fillMaxWidth(if (breakpoint > Breakpoint.MD) 80.percent else 90.percent)
@@ -33,7 +34,7 @@ fun Header() {
         horizontalArrangement = Arrangement.SpaceBetween,
         verticalAlignment = Alignment.CenterVertically
     ) {
-        LeftSide(breakpoint = breakpoint)
+        LeftSide(breakpoint = breakpoint, onMenuClicked = onMenuClicked)
         if (breakpoint > Breakpoint.MD) RightSide()
     }
 }
@@ -56,9 +57,14 @@ fun RightSide() {
 }
 
 @Composable
-fun LeftSide(breakpoint: Breakpoint) {
+fun LeftSide(breakpoint: Breakpoint, onMenuClicked: () -> Unit) {
     Row(verticalAlignment = Alignment.CenterVertically) {
-        if (breakpoint <= Breakpoint.MD) FaBars(modifier = Modifier.margin(right = 15.px), size = IconSize.XL)
-        Image(src = Res.Image.logo, desc = "Logo Image", modifier = LogoStyle.toModifier())
+        if (breakpoint <= Breakpoint.MD) FaBars(modifier = Modifier.margin(right = 15.px)
+            .cursor(Cursor.Pointer)
+            .onClick {
+                onMenuClicked()
+            }, size = IconSize.XL
+        )
+        Image(src = Res.Image.logo, desc = "Logo Image", modifier = LogoStyle.toModifier().onClick { })
     }
 }

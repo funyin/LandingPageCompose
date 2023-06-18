@@ -44,5 +44,11 @@ enum class Testimonial(
         fullName = "Aca Rodic",
         profession = "Cyber Security Analyst",
         review = LOREM_IPSUM_SHORT
+    ),
+    Seventh(
+        image = Res.Image.avatar6,
+        fullName = "FunyinKash",
+        profession = "Cyber Security Analyst",
+        review = LOREM_IPSUM_SHORT
     )
 }

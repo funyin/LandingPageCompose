@@ -3,7 +3,7 @@ package com.stevdza.san.components
 import androidx.compose.runtime.*
 import com.stevdza.san.models.Theme
 import com.stevdza.san.util.Constants
-import com.stevdza.san.util.animatePercentage
+import com.stevdza.san.util.animateNumber
 import com.varabyte.kobweb.compose.css.CSSTransition
 import com.varabyte.kobweb.compose.css.FontWeight
 import com.varabyte.kobweb.compose.foundation.layout.Arrangement
@@ -28,7 +28,7 @@ fun SkillBar(
     val scope = rememberCoroutineScope()
     LaunchedEffect(percent) {
         scope.launch {
-            animatePercentage(percent = percent.value, delay = (index + 1) * 8L) {
+            animateNumber(percent = percent.value, delay = (index + 1) * 8L) {
                 animatedPercent = it.toFloat()
             }
         }

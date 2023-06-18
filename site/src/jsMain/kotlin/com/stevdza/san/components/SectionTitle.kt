@@ -1,6 +1,7 @@
 package com.stevdza.san.components
 
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.rememberCoroutineScope
 import com.stevdza.san.models.Section
 import com.stevdza.san.models.Theme
 import com.stevdza.san.util.Constants
@@ -27,6 +28,7 @@ fun SectionTitle(
         Alignment.End -> TextAlign.End
         Alignment.Start -> TextAlign.Start
     }
+    val coroutineScope = rememberCoroutineScope() 
     Column(
         modifier = modifier,
         horizontalAlignment = alignment

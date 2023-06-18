@@ -31,13 +31,13 @@ import org.jetbrains.compose.web.dom.Text
 
 
 @Composable
-fun MainSection() {
+fun MainSection(onMenuClicked: () -> Unit) {
     Box(
         modifier = Modifier.id(Section.Home.id).maxWidth(Constants.SECTION_WIDTH.px),
         contentAlignment = Alignment.TopCenter
     ) {
         MainBackground()
-        MainContent()
+        MainContent(onMenuClicked = onMenuClicked)
     }
 }
 
@@ -51,14 +51,14 @@ fun MainBackground() {
 }
 
 @Composable
-fun MainContent() {
+fun MainContent(onMenuClicked: () -> Unit) {
     val breakpoint = rememberBreakpoint()
     Column(
         modifier = Modifier.fillMaxSize(),
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.SpaceBetween
     ) {
-        Header()
+        Header(onMenuClicked = onMenuClicked)
         Column(
             modifier = Modifier.fillMaxWidth(if (breakpoint > Breakpoint.MD) 80.percent else 90.percent),
             verticalArrangement = Arrangement.Bottom,
