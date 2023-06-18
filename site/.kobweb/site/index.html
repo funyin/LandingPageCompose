@@ -1,0 +1,428 @@
+<!doctype html>
+<html lang="en">
+ <head> 
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+  <title>Kobweb Portfolio</title> 
+  <meta content="Powered by Kobweb" name="description"> 
+  <link href="/favicon.ico" rel="icon"> 
+  <meta content="width=device-width, initial-scale=1" name="viewport"> 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script> 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"> 
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet"> 
+ </head> 
+ <body> 
+  <div id="root">
+   <style>html, body { padding: 0px; margin: 0px; }* { box-sizing: border-box; }</style>
+   <style>.kobweb-box { display: grid; grid-template-columns: minmax(0px, 1fr); grid-template-rows: minmax(0px, 1fr); }.kobweb-box > * { grid-area: 1 / 1 / auto / auto; }.kobweb-box.kobweb-align-top-start { place-items: start; }.kobweb-box.kobweb-align-top-center { place-items: start center; }.kobweb-box.kobweb-align-top-end { place-items: start end; }.kobweb-box.kobweb-align-center-start { place-items: center start; }.kobweb-box.kobweb-align-center { place-items: center; }.kobweb-box.kobweb-align-center-end { place-items: center end; }.kobweb-box.kobweb-align-bottom-start { place-items: end start; }.kobweb-box.kobweb-align-bottom-center { place-items: end center; }.kobweb-box.kobweb-align-bottom-end { place-items: end; }.kobweb-box > .kobweb-align-top-start-self { place-self: start; }.kobweb-box > .kobweb-align-top-center-self { place-self: start center; }.kobweb-box > .kobweb-align-top-end-self { place-self: start end; }.kobweb-box > .kobweb-align-center-start-self { place-self: center start; }.kobweb-box > .kobweb-align-center-self { place-self: center; }.kobweb-box > .kobweb-align-center-end-self { place-self: center end; }.kobweb-box > .kobweb-align-bottom-start-self { place-self: end start; }.kobweb-box > .kobweb-align-bottom-center-self { place-self: end center; }.kobweb-box > .kobweb-align-bottom-end-self { place-self: end; }.kobweb-col { display: flex; flex-direction: column; }.kobweb-col.kobweb-arrange-top { justify-content: flex-start; }.kobweb-col.kobweb-arrange-center { justify-content: center; }.kobweb-col.kobweb-arrange-bottom { justify-content: flex-end; }.kobweb-col.kobweb-arrange-space-evenly { justify-content: space-evenly; }.kobweb-col.kobweb-arrange-space-between { justify-content: space-between; }.kobweb-col.kobweb-arrange-space-around { justify-content: space-around; }.kobweb-col.kobweb-align-start { align-items: flex-start; }.kobweb-col.kobweb-align-center-horiz { align-items: center; }.kobweb-col.kobweb-align-end { align-items: flex-end; }.kobweb-col > .kobweb-align-start-self { align-self: flex-start; }.kobweb-col > .kobweb-align-center-horiz-self { align-self: center; }.kobweb-col > .kobweb-align-end-self { align-self: flex-end; }.kobweb-row { display: flex; flex-direction: row; }.kobweb-row.kobweb-arrange-start { justify-content: flex-start; }.kobweb-row.kobweb-arrange-center { justify-content: center; }.kobweb-row.kobweb-arrange-end { justify-content: flex-end; }.kobweb-row.kobweb-arrange-space-evenly { justify-content: space-evenly; }.kobweb-row.kobweb-arrange-space-between { justify-content: space-between; }.kobweb-row.kobweb-arrange-space-around { justify-content: space-around; }.kobweb-row.kobweb-align-top { align-items: flex-start; }.kobweb-row.kobweb-align-center-vert { align-items: center; }.kobweb-row.kobweb-align-bottom { align-items: flex-end; }.kobweb-row > .kobweb-align-top-self { align-self: flex-start; }.kobweb-row > .kobweb-align-center-vert-self { align-self: center; }.kobweb-row > .kobweb-align-bottom-self { align-self: flex-end; }.kobweb-spacer { flex-grow: 1; }</style>
+   <style>.silk-button_light { color: rgb(0, 0, 0); background-color: rgb(204, 204, 204); line-height: 1.2; font-size: 16px; padding: 8px 16px; border-radius: 4px; border-width: 0px; outline: 0px; user-select: none; }.silk-button_dark { color: rgb(255, 255, 255); background-color: rgb(51, 51, 51); line-height: 1.2; font-size: 16px; padding: 8px 16px; border-radius: 4px; border-width: 0px; outline: 0px; user-select: none; }.silk-button_light:hover:not([aria-disabled="true"]) { background-color: rgb(163, 163, 163); cursor: pointer; }.silk-button_dark:hover:not([aria-disabled="true"]) { background-color: rgb(92, 92, 92); cursor: pointer; }.silk-button_light:focus-visible:not([aria-disabled="true"]) { box-shadow: rgb(100, 149, 237) 0px 0px 0px 3px; }.silk-button_dark:focus-visible:not([aria-disabled="true"]) { box-shadow: rgb(135, 206, 250) 0px 0px 0px 3px; }.silk-button_light:active:not([aria-disabled="true"]) { background-color: rgb(122, 122, 122); }.silk-button_dark:active:not([aria-disabled="true"]) { background-color: rgb(133, 133, 133); }.silk-disabled { opacity: 0.5; cursor: not-allowed; }.silk-divider_light { border-top: 1px solid rgb(0, 0, 0); width: 90%; }.silk-divider_dark { border-top: 1px solid rgb(255, 255, 255); width: 90%; }.silk-link { text-decoration-line: none; }.silk-link_light:link { color: rgb(0, 0, 255); }.silk-link_dark:link { color: rgb(0, 255, 255); }.silk-link_light:visited { color: rgb(128, 0, 128); }.silk-link_dark:visited { color: rgb(238, 130, 238); }.silk-link:hover { text-decoration-line: underline; }.silk-overlay_light { background-color: rgba(0, 0, 0, 0.498); }.silk-overlay_dark { background-color: rgba(255, 255, 255, 0.498); }.silk-popup { transition: opacity 150ms ease 0s; }.silk-simple-grid { display: grid; }.silk-smooth-color { transition: background-color 200ms ease 0s; }.silk-surface_light { background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); }.silk-surface_dark { background-color: rgb(0, 0, 0); color: rgb(255, 255, 255); }.silk-tooltip-arrow { position: absolute; border-width: 5px; border-style: solid; }.silk-tooltip_light { position: relative; background-color: rgb(0, 0, 0); color: rgb(255, 255, 255); border-radius: 6px; }.silk-tooltip_dark { position: relative; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); border-radius: 6px; }.tooltip-text { padding: 5px; }@media not all and (min-width: 30rem) {  .silk-display-if-sm { display: none; }}@media not all and (min-width: 48rem) {  .silk-display-if-md { display: none; }}@media not all and (min-width: 62rem) {  .silk-display-if-lg { display: none; }}@media not all and (min-width: 80rem) {  .silk-display-if-xl { display: none; }}@media (min-width: 30rem) {  .silk-display-until-sm { display: none; }}@media (min-width: 48rem) {  .silk-display-until-md { display: none; }}@media (min-width: 62rem) {  .silk-display-until-lg { display: none; }}@media (min-width: 80rem) {  .silk-display-until-xl { display: none; }}.navigation-item { color: rgb(18, 29, 52); transition: color 200ms ease 0s; }.navigation-item:any-link { color: rgb(18, 29, 52); }.navigation-item:hover { color: rgb(0, 167, 142); }.logo { transform: rotate(0deg); transition: transform 200ms ease 0s; }.logo:hover { transform: rotate(-10deg); }.social-link { color: rgb(207, 207, 207); transition: color 200ms ease 0s; }.social-link:hover { color: rgb(0, 167, 142); }.main-button { width: 100px; transition: width 200ms ease 0s; }.main-button:hover { width: 120px; }.main-image { filter: grayscale(100%); transition: filter 200ms ease 0s; }.main-image:hover { filter: grayscale(0%); }.porfolio-card > #columnParent > #boxParent > #greenOverlay { width: 0%; transition: width 300ms ease 0s; }.porfolio-card > #columnParent > #boxParent > #greenOverlay > #linkIcon { visibility: hidden; transition: visibility 300ms ease 0s; }.porfolio-card:hover > #columnParent > #boxParent > #greenOverlay > #linkIcon { visibility: visible; }.porfolio-card:hover > #columnParent > #boxParent > #greenOverlay { width: 100%; }.porfolio-card > #columnParent > p { color: rgb(18, 29, 52); translate: 0px; transition: color 500ms ease 0s, translate 500ms ease 0s; }.porfolio-card:hover > #columnParent > p { color: rgb(0, 167, 142); translate: 8px; }.about-image { filter: grayscale(100%); border-radius: 0px; rotate: 0deg; transition: all 200ms ease 0s; }.about-image:hover { filter: grayscale(0%); border-radius: 100px; rotate: 10deg; transition: all 200ms ease 0s; }.about-text { opacity: 0.5; transition: opacity 200ms ease 0s; }.about-text:hover { opacity: 1; }.portfolio-arrow-icon { color: rgb(207, 207, 207); transition: color 300ms ease 0s; }.portfolio-arrow-icon:hover { color: rgb(0, 167, 142); }.service-card { border: 2px solid rgb(249, 249, 249); background-color: rgb(255, 255, 255); transition: border 200ms ease 0s, background 200ms ease 0s; }.service-card:hover { border: 2px solid rgb(0, 167, 142); background-color: rgb(0, 167, 142); }.service-card > #iconBox { background-color: rgba(0, 0, 0, 0); transition: background 200ms ease 0s; }.service-card:hover > #iconBox { background-color: rgb(255, 255, 255); }.service-card > p { color: rgb(18, 29, 52); transition: color 200ms ease 0s; }.service-card:hover > p { color: rgb(255, 255, 255); transition: color 200ms ease 0s; }.back-to-top-buton { rotate: 180deg; transition: rotate 300ms ease 0s; }.back-to-top-buton:hover { rotate: 0deg; }.input { border: 2px solid rgb(237, 237, 237); transition: border 200ms ease 0s; }.input:focus { border-color: rgb(0, 167, 142); box-shadow: 0px 0px 0px 0px; }.input:hover { border-color: rgb(0, 167, 142); box-shadow: 0px 0px 0px 0px; }.silk-image.silk-image-fit { width: 100%; object-fit: scale-down; }.silk-link.silk-link-undecorated:hover { text-decoration-line: none; }.silk-link.silk-link-uncolored_light:link { color: rgb(0, 0, 0); }.silk-link.silk-link-uncolored_dark:link { color: rgb(255, 255, 255); }.silk-link.silk-link-uncolored_light:visited { color: rgb(0, 0, 0); }.silk-link.silk-link-uncolored_dark:visited { color: rgb(255, 255, 255); }.silk-simple-grid.silk-simple-grid-base-1 { grid-template-columns: repeat(1, 1fr); }.silk-simple-grid.silk-simple-grid-base-2 { grid-template-columns: repeat(2, 1fr); }.silk-simple-grid.silk-simple-grid-base-3 { grid-template-columns: repeat(3, 1fr); }.silk-simple-grid.silk-simple-grid-base-4 { grid-template-columns: repeat(4, 1fr); }.silk-simple-grid.silk-simple-grid-base-5 { grid-template-columns: repeat(5, 1fr); }@media (min-width: 30rem) {  .silk-simple-grid.silk-simple-grid-sm-1 { grid-template-columns: repeat(1, 1fr); }}@media (min-width: 30rem) {  .silk-simple-grid.silk-simple-grid-sm-2 { grid-template-columns: repeat(2, 1fr); }}@media (min-width: 30rem) {  .silk-simple-grid.silk-simple-grid-sm-3 { grid-template-columns: repeat(3, 1fr); }}@media (min-width: 30rem) {  .silk-simple-grid.silk-simple-grid-sm-4 { grid-template-columns: repeat(4, 1fr); }}@media (min-width: 30rem) {  .silk-simple-grid.silk-simple-grid-sm-5 { grid-template-columns: repeat(5, 1fr); }}@media (min-width: 48rem) {  .silk-simple-grid.silk-simple-grid-md-1 { grid-template-columns: repeat(1, 1fr); }}@media (min-width: 48rem) {  .silk-simple-grid.silk-simple-grid-md-2 { grid-template-columns: repeat(2, 1fr); }}@media (min-width: 48rem) {  .silk-simple-grid.silk-simple-grid-md-3 { grid-template-columns: repeat(3, 1fr); }}@media (min-width: 48rem) {  .silk-simple-grid.silk-simple-grid-md-4 { grid-template-columns: repeat(4, 1fr); }}@media (min-width: 48rem) {  .silk-simple-grid.silk-simple-grid-md-5 { grid-template-columns: repeat(5, 1fr); }}@media (min-width: 62rem) {  .silk-simple-grid.silk-simple-grid-lg-1 { grid-template-columns: repeat(1, 1fr); }}@media (min-width: 62rem) {  .silk-simple-grid.silk-simple-grid-lg-2 { grid-template-columns: repeat(2, 1fr); }}@media (min-width: 62rem) {  .silk-simple-grid.silk-simple-grid-lg-3 { grid-template-columns: repeat(3, 1fr); }}@media (min-width: 62rem) {  .silk-simple-grid.silk-simple-grid-lg-4 { grid-template-columns: repeat(4, 1fr); }}@media (min-width: 62rem) {  .silk-simple-grid.silk-simple-grid-lg-5 { grid-template-columns: repeat(5, 1fr); }}@media (min-width: 80rem) {  .silk-simple-grid.silk-simple-grid-xl-1 { grid-template-columns: repeat(1, 1fr); }}@media (min-width: 80rem) {  .silk-simple-grid.silk-simple-grid-xl-2 { grid-template-columns: repeat(2, 1fr); }}@media (min-width: 80rem) {  .silk-simple-grid.silk-simple-grid-xl-3 { grid-template-columns: repeat(3, 1fr); }}@media (min-width: 80rem) {  .silk-simple-grid.silk-simple-grid-xl-4 { grid-template-columns: repeat(4, 1fr); }}@media (min-width: 80rem) {  .silk-simple-grid.silk-simple-grid-xl-5 { grid-template-columns: repeat(5, 1fr); }}.silk-surface.silk-surface-animated-color { transition: background-color 200ms ease 0s; }.silk-surface.silk-surface-animated-color div { transition: background-color 200ms ease 0s; }.silk-tooltip-arrow.silk-tooltip-arrow-top-left_light { margin: -9px 0px 0px 9px; top: 0px; border-color: transparent transparent rgb(0, 0, 0); }.silk-tooltip-arrow.silk-tooltip-arrow-top-left_dark { margin: -9px 0px 0px 9px; top: 0px; border-color: transparent transparent rgb(255, 255, 255); }.silk-tooltip-arrow.silk-tooltip-arrow-top_light { margin: -9px 0px 0px -5px; left: 50%; top: 0px; border-color: transparent transparent rgb(0, 0, 0); }.silk-tooltip-arrow.silk-tooltip-arrow-top_dark { margin: -9px 0px 0px -5px; left: 50%; top: 0px; border-color: transparent transparent rgb(255, 255, 255); }.silk-tooltip-arrow.silk-tooltip-arrow-top-right_light { margin: -9px 9px 0px 0px; right: 0px; top: 0px; border-color: transparent transparent rgb(0, 0, 0); }.silk-tooltip-arrow.silk-tooltip-arrow-top-right_dark { margin: -9px 9px 0px 0px; right: 0px; top: 0px; border-color: transparent transparent rgb(255, 255, 255); }.silk-tooltip-arrow.silk-tooltip-arrow-left-top_light { margin: 9px 0px 0px -9px; left: 0px; top: 0px; border-color: transparent rgb(0, 0, 0) transparent transparent; }.silk-tooltip-arrow.silk-tooltip-arrow-left-top_dark { margin: 9px 0px 0px -9px; left: 0px; top: 0px; border-color: transparent rgb(255, 255, 255) transparent transparent; }.silk-tooltip-arrow.silk-tooltip-arrow-left_light { margin: -5px 0px 0px -9px; left: 0px; top: 50%; border-color: transparent rgb(0, 0, 0) transparent transparent; }.silk-tooltip-arrow.silk-tooltip-arrow-left_dark { margin: -5px 0px 0px -9px; left: 0px; top: 50%; border-color: transparent rgb(255, 255, 255) transparent transparent; }.silk-tooltip-arrow.silk-tooltip-arrow-left-bottom_light { margin: 0px 0px 9px -9px; left: 0px; bottom: 0px; border-color: transparent rgb(0, 0, 0) transparent transparent; }.silk-tooltip-arrow.silk-tooltip-arrow-left-bottom_dark { margin: 0px 0px 9px -9px; left: 0px; bottom: 0px; border-color: transparent rgb(255, 255, 255) transparent transparent; }.silk-tooltip-arrow.silk-tooltip-arrow-right-top_light { margin: 9px -9px 0px 0px; right: 0px; top: 0px; border-color: transparent transparent transparent rgb(0, 0, 0); }.silk-tooltip-arrow.silk-tooltip-arrow-right-top_dark { margin: 9px -9px 0px 0px; right: 0px; top: 0px; border-color: transparent transparent transparent rgb(255, 255, 255); }.silk-tooltip-arrow.silk-tooltip-arrow-right_light { margin: -5px -9px 0px 0px; right: 0px; top: 50%; border-color: transparent transparent transparent rgb(0, 0, 0); }.silk-tooltip-arrow.silk-tooltip-arrow-right_dark { margin: -5px -9px 0px 0px; right: 0px; top: 50%; border-color: transparent transparent transparent rgb(255, 255, 255); }.silk-tooltip-arrow.silk-tooltip-arrow-right-bottom_light { margin: 0px -9px 9px 0px; right: 0px; bottom: 0px; border-color: transparent transparent transparent rgb(0, 0, 0); }.silk-tooltip-arrow.silk-tooltip-arrow-right-bottom_dark { margin: 0px -9px 9px 0px; right: 0px; bottom: 0px; border-color: transparent transparent transparent rgb(255, 255, 255); }.silk-tooltip-arrow.silk-tooltip-arrow-bottom-left_light { margin: 0px 0px -9px 9px; left: 0px; bottom: 0px; border-color: rgb(0, 0, 0) transparent transparent; }.silk-tooltip-arrow.silk-tooltip-arrow-bottom-left_dark { margin: 0px 0px -9px 9px; left: 0px; bottom: 0px; border-color: rgb(255, 255, 255) transparent transparent; }.silk-tooltip-arrow.silk-tooltip-arrow-bottom_light { margin: 0px 0px -9px -5px; left: 50%; bottom: 0px; border-color: rgb(0, 0, 0) transparent transparent; }.silk-tooltip-arrow.silk-tooltip-arrow-bottom_dark { margin: 0px 0px -9px -5px; left: 50%; bottom: 0px; border-color: rgb(255, 255, 255) transparent transparent; }.silk-tooltip-arrow.silk-tooltip-arrow-bottom-right_light { margin: 0px 9px -9px 0px; right: 0px; bottom: 0px; border-color: rgb(0, 0, 0) transparent transparent; }.silk-tooltip-arrow.silk-tooltip-arrow-bottom-right_dark { margin: 0px 9px -9px 0px; right: 0px; bottom: 0px; border-color: rgb(255, 255, 255) transparent transparent; }</style>
+   <div class="silk-surface silk-surface_light silk-smooth-color kobweb-box kobweb-align-top-start" style="min-height: 100vh;">
+    <div class="kobweb-box kobweb-align-top-start" style="width: 100%; height: 100%;">
+     <div class="kobweb-col kobweb-arrange-top kobweb-align-center-horiz" style="width: 100%; height: 100%;">
+      <div class="kobweb-box kobweb-align-top-center" style="max-width: 1920px;" id="home">
+       <img class="silk-image" style="width: 100%; height: 100%; object-fit: cover;" src="background.svg" alt="Background Image">
+       <div class="kobweb-col kobweb-arrange-space-between kobweb-align-center-horiz" style="width: 100%; height: 100%;">
+        <div class="kobweb-row kobweb-arrange-space-between kobweb-align-center-vert" style="width: 80%; margin: 50px 0px;">
+         <div class="kobweb-row kobweb-arrange-start kobweb-align-center-vert">
+          <img class="silk-image logo" src="logo.svg" alt="Logo Image">
+         </div>
+         <div class="kobweb-row kobweb-arrange-end kobweb-align-top" style="width: 100%; border-radius: 50px; background-color: rgb(249, 249, 249); padding: 20px;">
+          <a class="silk-link silk-link_light navigation-item" style="padding: 0px 30px 0px 0px; font-family: Roboto, system-ui; font-size: 18px; font-weight: normal; text-decoration-line: none;" href="#home">Home</a><a class="silk-link silk-link_light navigation-item" style="padding: 0px 30px 0px 0px; font-family: Roboto, system-ui; font-size: 18px; font-weight: normal; text-decoration-line: none;" href="#about">About me</a><a class="silk-link silk-link_light navigation-item" style="padding: 0px 30px 0px 0px; font-family: Roboto, system-ui; font-size: 18px; font-weight: normal; text-decoration-line: none;" href="#service">Service</a><a class="silk-link silk-link_light navigation-item" style="padding: 0px 30px 0px 0px; font-family: Roboto, system-ui; font-size: 18px; font-weight: normal; text-decoration-line: none;" href="#portfolio">Portfolio</a><a class="silk-link silk-link_light navigation-item" style="padding: 0px 30px 0px 0px; font-family: Roboto, system-ui; font-size: 18px; font-weight: normal; text-decoration-line: none;" href="#experience">Experience</a><a class="silk-link silk-link_light navigation-item" style="padding: 0px 30px 0px 0px; font-family: Roboto, system-ui; font-size: 18px; font-weight: normal; text-decoration-line: none;" href="#contact">Contact me</a>
+         </div>
+        </div>
+        <div class="kobweb-col kobweb-arrange-bottom kobweb-align-start" style="width: 80%;">
+         <div class="silk-simple-grid silk-simple-grid-base-1 silk-simple-grid-md-2" style="width: 100%;">
+          <div class="kobweb-row kobweb-arrange-start kobweb-align-center-vert">
+           <div class="kobweb-col kobweb-arrange-center kobweb-align-center-horiz" style="margin: 0px 25px 0px 0px; padding: 25px 0px; min-width: 40px; border-radius: 20px; background-color: rgb(255, 255, 255);">
+            <a class="silk-link silk-link_light" href="https://funyinkash.com"><span class="social-link fab fa-facebook fa-lg" style="margin: 0px 0px 40px;"></span></a><a class="silk-link silk-link_light" href="https://funyinkash.com"><span class="social-link fab fa-twitter fa-lg" style="margin: 0px 0px 40px;"></span></a><a class="silk-link silk-link_light" href="https://funyinkash.com"><span class="social-link fab fa-instagram fa-lg" style="margin: 0px 0px 40px;"></span></a><a class="silk-link silk-link_light" href="https://funyinkash.com"><span class="social-link fab fa-linkedin fa-lg"></span></a>
+           </div>
+           <div class="kobweb-col kobweb-arrange-top kobweb-align-start">
+            <p style="margin: 0px; font-family: Roboto, system-ui; font-size: 45px; font-weight: normal; color: rgb(0, 167, 142);">Hello, I'm</p>
+            <p style="margin: 20px 0px 0px; font-family: Roboto, system-ui; font-size: 68px; font-weight: bolder; line-height: 1; color: rgb(18, 29, 52);">Funyinoluwa Kashimawo</p>
+            <p style="margin: 10px 0px 5px; font-family: Roboto, system-ui; font-size: 20px; font-weight: bold; color: rgb(18, 29, 52);">Mobile Developer</p>
+            <p style="margin: 0px 0px 25px; font-family: Roboto, system-ui; font-size: 15px; font-style: italic; font-weight: normal; max-width: 400px; color: rgb(18, 29, 52);">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><button class="main-button" style="height: 40px; border: 0px; border-radius: 5px; background-color: rgb(0, 167, 142); color: rgb(255, 255, 255); cursor: pointer; padding: 0px;"><a class="silk-link silk-link_light" style="color: rgb(255, 255, 255); text-decoration-line: none; padding: 0px 12px;" href="#contact">Hire me</a></button>
+           </div>
+          </div>
+          <div class="kobweb-col kobweb-arrange-bottom kobweb-align-center-horiz" style="width: 100%; height: 100%;">
+           <img class="silk-image main-image" style="width: 80%;" src="main_image.png" alt="MainImage">
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="kobweb-box kobweb-align-top-center" style="max-width: 1920px; padding: 150px 0px;" id="about">
+       <div class="kobweb-col kobweb-arrange-top kobweb-align-center-horiz" style="width: 100%; max-width: 1200px;">
+        <div class="silk-simple-grid silk-simple-grid-base-1 silk-simple-grid-md-2">
+         <div class="kobweb-box kobweb-align-center" style="width: 90%;">
+          <img class="silk-image about-image" style="width: 80%;" src="about_image.png" alt="About image">
+         </div>
+         <div class="kobweb-col kobweb-arrange-center kobweb-align-start" style="width: 100%;">
+          <div class="kobweb-col kobweb-arrange-top kobweb-align-start">
+           <p style="width: 100%; font-family: Roboto, system-ui; font-weight: normal; margin: 0px; font-size: 25px; color: rgb(0, 167, 142); text-align: start;">About me</p>
+           <p style="width: 100%; font-family: Roboto, system-ui; font-weight: bold; margin: 0px 0px 10px; font-size: 40px; text-align: start; color: rgb(18, 29, 52);">Why Hire Me?</p>
+           <div class="kobweb-box kobweb-align-top-start" style="height: 2px; width: 80px; border-radius: 50px; background-color: rgb(0, 167, 142);"></div>
+          </div>
+          <p class="about-text" style="margin: 25px 0px; font-family: Roboto, system-ui; max-width: 500px; font-size: 18px; font-style: italic; color: rgb(18, 29, 52);">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <div class="kobweb-col kobweb-arrange-top kobweb-align-start" style="width: 100%; max-width: 700px; margin: 0px 0px 10px; padding: 5px 0px;">
+           <div class="kobweb-row kobweb-arrange-space-between kobweb-align-top" style="width: 100%; margin: 0px 0px 5px;">
+            <p style="font-family: Roboto, system-ui; font-weight: normal; font-size: 18px; margin: 0px; color: rgb(18, 29, 52);">Creative</p>
+            <p style="font-family: Roboto, system-ui; font-weight: normal; font-size: 18px; margin: 0px; color: rgb(18, 29, 52);">0%</p>
+           </div>
+           <div class="kobweb-box kobweb-align-top-start" style="width: 100%; height: 5px; background-color: rgb(237, 237, 237); border-radius: 0px 2px 2px 0px;">
+            <div class="kobweb-box kobweb-align-top-start" style="background-color: rgb(0, 167, 142); height: 100%; width: 0%; border-radius: 0px 2px 2px 0px; transition: width 0ms ease 0s;"></div>
+           </div>
+          </div>
+          <div class="kobweb-col kobweb-arrange-top kobweb-align-start" style="width: 100%; max-width: 700px; margin: 0px 0px 10px; padding: 5px 0px;">
+           <div class="kobweb-row kobweb-arrange-space-between kobweb-align-top" style="width: 100%; margin: 0px 0px 5px;">
+            <p style="font-family: Roboto, system-ui; font-weight: normal; font-size: 18px; margin: 0px; color: rgb(18, 29, 52);">Accountable</p>
+            <p style="font-family: Roboto, system-ui; font-weight: normal; font-size: 18px; margin: 0px; color: rgb(18, 29, 52);">0%</p>
+           </div>
+           <div class="kobweb-box kobweb-align-top-start" style="width: 100%; height: 5px; background-color: rgb(237, 237, 237); border-radius: 0px 2px 2px 0px;">
+            <div class="kobweb-box kobweb-align-top-start" style="background-color: rgb(0, 167, 142); height: 100%; width: 0%; border-radius: 0px 2px 2px 0px; transition: width 300ms ease 0s;"></div>
+           </div>
+          </div>
+          <div class="kobweb-col kobweb-arrange-top kobweb-align-start" style="width: 100%; max-width: 700px; margin: 0px 0px 10px; padding: 5px 0px;">
+           <div class="kobweb-row kobweb-arrange-space-between kobweb-align-top" style="width: 100%; margin: 0px 0px 5px;">
+            <p style="font-family: Roboto, system-ui; font-weight: normal; font-size: 18px; margin: 0px; color: rgb(18, 29, 52);">Hard Working</p>
+            <p style="font-family: Roboto, system-ui; font-weight: normal; font-size: 18px; margin: 0px; color: rgb(18, 29, 52);">0%</p>
+           </div>
+           <div class="kobweb-box kobweb-align-top-start" style="width: 100%; height: 5px; background-color: rgb(237, 237, 237); border-radius: 0px 2px 2px 0px;">
+            <div class="kobweb-box kobweb-align-top-start" style="background-color: rgb(0, 167, 142); height: 100%; width: 0%; border-radius: 0px 2px 2px 0px; transition: width 600ms ease 0s;"></div>
+           </div>
+          </div>
+          <div class="kobweb-col kobweb-arrange-top kobweb-align-start" style="width: 100%; max-width: 700px; margin: 0px 0px 10px; padding: 5px 0px;">
+           <div class="kobweb-row kobweb-arrange-space-between kobweb-align-top" style="width: 100%; margin: 0px 0px 5px;">
+            <p style="font-family: Roboto, system-ui; font-weight: normal; font-size: 18px; margin: 0px; color: rgb(18, 29, 52);">Value for Money</p>
+            <p style="font-family: Roboto, system-ui; font-weight: normal; font-size: 18px; margin: 0px; color: rgb(18, 29, 52);">0%</p>
+           </div>
+           <div class="kobweb-box kobweb-align-top-start" style="width: 100%; height: 5px; background-color: rgb(237, 237, 237); border-radius: 0px 2px 2px 0px;">
+            <div class="kobweb-box kobweb-align-top-start" style="background-color: rgb(0, 167, 142); height: 100%; width: 0%; border-radius: 0px 2px 2px 0px; transition: width 900ms ease 0s;"></div>
+           </div>
+          </div>
+          <div class="kobweb-col kobweb-arrange-top kobweb-align-start" style="width: 100%; max-width: 700px; margin: 0px 0px 10px; padding: 5px 0px;">
+           <div class="kobweb-row kobweb-arrange-space-between kobweb-align-top" style="width: 100%; margin: 0px 0px 5px;">
+            <p style="font-family: Roboto, system-ui; font-weight: normal; font-size: 18px; margin: 0px; color: rgb(18, 29, 52);">On-Time Delivery</p>
+            <p style="font-family: Roboto, system-ui; font-weight: normal; font-size: 18px; margin: 0px; color: rgb(18, 29, 52);">0%</p>
+           </div>
+           <div class="kobweb-box kobweb-align-top-start" style="width: 100%; height: 5px; background-color: rgb(237, 237, 237); border-radius: 0px 2px 2px 0px;">
+            <div class="kobweb-box kobweb-align-top-start" style="background-color: rgb(0, 167, 142); height: 100%; width: 0%; border-radius: 0px 2px 2px 0px; transition: width 1200ms ease 0s;"></div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="kobweb-box kobweb-align-top-center" style="max-width: 1920px; padding: 100px 0px;" id="service">
+       <div class="kobweb-col kobweb-arrange-top kobweb-align-center-horiz" style="width: 90%;">
+        <div class="kobweb-col kobweb-arrange-top kobweb-align-center-horiz" style="width: 100%; margin: 0px 0px 20px;">
+         <p style="width: 100%; font-family: Roboto, system-ui; font-weight: normal; margin: 0px; font-size: 25px; color: rgb(0, 167, 142); text-align: center;">Service</p>
+         <p style="width: 100%; font-family: Roboto, system-ui; font-weight: bold; margin: 0px 0px 10px; font-size: 40px; text-align: center; color: rgb(18, 29, 52);">I'm Good at</p>
+         <div class="kobweb-box kobweb-align-top-start" style="height: 2px; width: 80px; border-radius: 50px; background-color: rgb(0, 167, 142);"></div>
+        </div>
+        <div class="silk-simple-grid silk-simple-grid-base-1 silk-simple-grid-sm-2 silk-simple-grid-md-3">
+         <div class="service-card kobweb-col kobweb-arrange-top kobweb-align-start" style="max-width: 300px; margin: 20px; padding: 20px; border: 2px solid rgb(249, 249, 249);">
+          <div class="kobweb-box kobweb-align-top-start" style="padding: 10px; margin: 0px 0px 20px; border-radius: 20px 20px 0px; border: 2px solid rgb(0, 167, 142);" id="iconBox">
+           <img class="silk-image" style="width: 40px; height: 40px;" src="android_icon.svg" alt="Image desc">
+          </div>
+          <p style="margin: 0px 0px 10px; font-family: Roboto, system-ui; font-size: 18px; font-weight: bold;">Android Development</p>
+          <p style="margin: 0px 0px 10px; font-family: Roboto, system-ui; font-size: 14px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+         </div>
+         <div class="service-card kobweb-col kobweb-arrange-top kobweb-align-start" style="max-width: 300px; margin: 20px; padding: 20px; border: 2px solid rgb(249, 249, 249);">
+          <div class="kobweb-box kobweb-align-top-start" style="padding: 10px; margin: 0px 0px 20px; border-radius: 20px 20px 0px; border: 2px solid rgb(0, 167, 142);" id="iconBox">
+           <img class="silk-image" style="width: 40px; height: 40px;" src="apple_icon.svg" alt="Image desc">
+          </div>
+          <p style="margin: 0px 0px 10px; font-family: Roboto, system-ui; font-size: 18px; font-weight: bold;">iOS Development</p>
+          <p style="margin: 0px 0px 10px; font-family: Roboto, system-ui; font-size: 14px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+         </div>
+         <div class="service-card kobweb-col kobweb-arrange-top kobweb-align-start" style="max-width: 300px; margin: 20px; padding: 20px; border: 2px solid rgb(249, 249, 249);">
+          <div class="kobweb-box kobweb-align-top-start" style="padding: 10px; margin: 0px 0px 20px; border-radius: 20px 20px 0px; border: 2px solid rgb(0, 167, 142);" id="iconBox">
+           <img class="silk-image" style="width: 40px; height: 40px;" src="web_icon.svg" alt="Image desc">
+          </div>
+          <p style="margin: 0px 0px 10px; font-family: Roboto, system-ui; font-size: 18px; font-weight: bold;">Web Development</p>
+          <p style="margin: 0px 0px 10px; font-family: Roboto, system-ui; font-size: 14px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+         </div>
+         <div class="service-card kobweb-col kobweb-arrange-top kobweb-align-start" style="max-width: 300px; margin: 20px; padding: 20px; border: 2px solid rgb(249, 249, 249);">
+          <div class="kobweb-box kobweb-align-top-start" style="padding: 10px; margin: 0px 0px 20px; border-radius: 20px 20px 0px; border: 2px solid rgb(0, 167, 142);" id="iconBox">
+           <img class="silk-image" style="width: 40px; height: 40px;" src="design_icon.svg" alt="Image desc">
+          </div>
+          <p style="margin: 0px 0px 10px; font-family: Roboto, system-ui; font-size: 18px; font-weight: bold;">UX/UI Design</p>
+          <p style="margin: 0px 0px 10px; font-family: Roboto, system-ui; font-size: 14px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+         </div>
+         <div class="service-card kobweb-col kobweb-arrange-top kobweb-align-start" style="max-width: 300px; margin: 20px; padding: 20px; border: 2px solid rgb(249, 249, 249);">
+          <div class="kobweb-box kobweb-align-top-start" style="padding: 10px; margin: 0px 0px 20px; border-radius: 20px 20px 0px; border: 2px solid rgb(0, 167, 142);" id="iconBox">
+           <img class="silk-image" style="width: 40px; height: 40px;" src="business_icon.svg" alt="Image desc">
+          </div>
+          <p style="margin: 0px 0px 10px; font-family: Roboto, system-ui; font-size: 18px; font-weight: bold;">Business Analysis</p>
+          <p style="margin: 0px 0px 10px; font-family: Roboto, system-ui; font-size: 14px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+         </div>
+         <div class="service-card kobweb-col kobweb-arrange-top kobweb-align-start" style="max-width: 300px; margin: 20px; padding: 20px; border: 2px solid rgb(249, 249, 249);">
+          <div class="kobweb-box kobweb-align-top-start" style="padding: 10px; margin: 0px 0px 20px; border-radius: 20px 20px 0px; border: 2px solid rgb(0, 167, 142);" id="iconBox">
+           <img class="silk-image" style="width: 40px; height: 40px;" src="seo_icon.svg" alt="Image desc">
+          </div>
+          <p style="margin: 0px 0px 10px; font-family: Roboto, system-ui; font-size: 18px; font-weight: bold;">SEO Marketing</p>
+          <p style="margin: 0px 0px 10px; font-family: Roboto, system-ui; font-size: 14px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="kobweb-box kobweb-align-top-center" style="max-width: 1920px; padding: 100px 0px;" id="portfolio">
+       <div class="kobweb-col kobweb-arrange-top kobweb-align-start" style="width: 100%;">
+        <div class="kobweb-col kobweb-arrange-top kobweb-align-start" style="width: 100%; padding: 0px 0px 25px;">
+         <p style="width: 100%; font-family: Roboto, system-ui; font-weight: normal; margin: 0px; font-size: 25px; color: rgb(0, 167, 142); text-align: start;">Portfolio</p>
+         <p style="width: 100%; font-family: Roboto, system-ui; font-weight: bold; margin: 0px 0px 10px; font-size: 40px; text-align: start; color: rgb(18, 29, 52);">My Work</p>
+         <div class="kobweb-box kobweb-align-top-start" style="height: 2px; width: 80px; border-radius: 50px; background-color: rgb(0, 167, 142);"></div>
+        </div>
+        <div class="kobweb-row kobweb-arrange-start kobweb-align-top" style="width: 100%; max-width: 950px; overflow: scroll; padding: 0px 0px 12px; margin: 0px 0px 25px;" id="scrollableContainer">
+         <a class="silk-link silk-link_light porfolio-card" style="margin: 0px 25px 0px 0px; min-width: 300px; text-decoration-line: none;" href="">
+          <div class="kobweb-col kobweb-arrange-top kobweb-align-start" id="columnParent">
+           <div class="kobweb-box kobweb-align-top-start" style="margin: 0px 0px 20px; width: 300px; height: 300px;" id="boxParent">
+            <img class="silk-image" style="width: 300px; height: 300px; margin: 0px 0px 20px; object-fit: cover;" src="portfolio1.png" alt="Portfolio Image">
+            <div class="kobweb-box kobweb-align-center" style="height: 100%; background-color: rgba(0, 167, 142, 0.5);" id="greenOverlay">
+             <img class="silk-image" style="width: 32px; height: 32px;" src="link_icon.svg" alt="" id="linkIcon">
+            </div>
+           </div>
+           <p style="margin: 0px; font-family: Roboto, system-ui; font-size: 18px; font-weight: bold;">Kudoe</p>
+           <p style="margin: 8px 0px 0px; font-family: Roboto, system-ui; font-size: 14px; font-weight: normal; opacity: 0.5;">Web Design</p>
+          </div></a><a class="silk-link silk-link_light porfolio-card" style="margin: 0px 25px 0px 0px; min-width: 300px; text-decoration-line: none;" href="">
+          <div class="kobweb-col kobweb-arrange-top kobweb-align-start" id="columnParent">
+           <div class="kobweb-box kobweb-align-top-start" style="margin: 0px 0px 20px; width: 300px; height: 300px;" id="boxParent">
+            <img class="silk-image" style="width: 300px; height: 300px; margin: 0px 0px 20px; object-fit: cover;" src="portfolio2.png" alt="Portfolio Image">
+            <div class="kobweb-box kobweb-align-center" style="height: 100%; background-color: rgba(0, 167, 142, 0.5);" id="greenOverlay">
+             <img class="silk-image" style="width: 32px; height: 32px;" src="link_icon.svg" alt="" id="linkIcon">
+            </div>
+           </div>
+           <p style="margin: 0px; font-family: Roboto, system-ui; font-size: 18px; font-weight: bold;">Landing Page for NFT</p>
+           <p style="margin: 8px 0px 0px; font-family: Roboto, system-ui; font-size: 14px; font-weight: normal; opacity: 0.5;">Frontend</p>
+          </div></a><a class="silk-link silk-link_light porfolio-card" style="margin: 0px 25px 0px 0px; min-width: 300px; text-decoration-line: none;" href="">
+          <div class="kobweb-col kobweb-arrange-top kobweb-align-start" id="columnParent">
+           <div class="kobweb-box kobweb-align-top-start" style="margin: 0px 0px 20px; width: 300px; height: 300px;" id="boxParent">
+            <img class="silk-image" style="width: 300px; height: 300px; margin: 0px 0px 20px; object-fit: cover;" src="portfolio3.png" alt="Portfolio Image">
+            <div class="kobweb-box kobweb-align-center" style="height: 100%; background-color: rgba(0, 167, 142, 0.5);" id="greenOverlay">
+             <img class="silk-image" style="width: 32px; height: 32px;" src="link_icon.svg" alt="" id="linkIcon">
+            </div>
+           </div>
+           <p style="margin: 0px; font-family: Roboto, system-ui; font-size: 18px; font-weight: bold;">NFT Application</p>
+           <p style="margin: 8px 0px 0px; font-family: Roboto, system-ui; font-size: 14px; font-weight: normal; opacity: 0.5;">Frontend/Backend</p>
+          </div></a><a class="silk-link silk-link_light porfolio-card" style="margin: 0px 25px 0px 0px; min-width: 300px; text-decoration-line: none;" href="">
+          <div class="kobweb-col kobweb-arrange-top kobweb-align-start" id="columnParent">
+           <div class="kobweb-box kobweb-align-top-start" style="margin: 0px 0px 20px; width: 300px; height: 300px;" id="boxParent">
+            <img class="silk-image" style="width: 300px; height: 300px; margin: 0px 0px 20px; object-fit: cover;" src="portfolio4.jpg" alt="Portfolio Image">
+            <div class="kobweb-box kobweb-align-center" style="height: 100%; background-color: rgba(0, 167, 142, 0.5);" id="greenOverlay">
+             <img class="silk-image" style="width: 32px; height: 32px;" src="link_icon.svg" alt="" id="linkIcon">
+            </div>
+           </div>
+           <p style="margin: 0px; font-family: Roboto, system-ui; font-size: 18px; font-weight: bold;">Game Statistics Application</p>
+           <p style="margin: 8px 0px 0px; font-family: Roboto, system-ui; font-size: 14px; font-weight: normal; opacity: 0.5;">Web/Mobile App</p>
+          </div></a><a class="silk-link silk-link_light porfolio-card" style="margin: 0px; min-width: 300px; text-decoration-line: none;" href="">
+          <div class="kobweb-col kobweb-arrange-top kobweb-align-start" id="columnParent">
+           <div class="kobweb-box kobweb-align-top-start" style="margin: 0px 0px 20px; width: 300px; height: 300px;" id="boxParent">
+            <img class="silk-image" style="width: 300px; height: 300px; margin: 0px 0px 20px; object-fit: cover;" src="portfolio5.png" alt="Portfolio Image">
+            <div class="kobweb-box kobweb-align-center" style="height: 100%; background-color: rgba(0, 167, 142, 0.5);" id="greenOverlay">
+             <img class="silk-image" style="width: 32px; height: 32px;" src="link_icon.svg" alt="" id="linkIcon">
+            </div>
+           </div>
+           <p style="margin: 0px; font-family: Roboto, system-ui; font-size: 18px; font-weight: bold;">Platform for Online Courses</p>
+           <p style="margin: 8px 0px 0px; font-family: Roboto, system-ui; font-size: 14px; font-weight: normal; opacity: 0.5;">Web/Mobile App</p>
+          </div></a>
+        </div>
+        <div class="kobweb-row kobweb-arrange-center kobweb-align-top" style="width: 100%;">
+         <span class="portfolio-arrow-icon fas fa-arrow-left fa-lg" style="cursor: pointer; margin: 0px 40px 0px 0px;"></span><span class="portfolio-arrow-icon fas fa-arrow-right fa-lg" style="cursor: pointer;"></span>
+        </div>
+       </div>
+      </div>
+      <div class="kobweb-box kobweb-align-top-center" style="padding: 100px 0px; background-color: rgb(249, 249, 249); width: 100%;" id="achievements">
+       <div class="silk-simple-grid silk-simple-grid-base-1 silk-simple-grid-md-2 silk-simple-grid-lg-4">
+        <div class="kobweb-row kobweb-arrange-start kobweb-align-center-vert" style="margin: 0px 25px 0px 0px;">
+         <img class="silk-image" style="width: 70px; height: 70px; margin: 0px 20px 0px 0px;" src="checkmark_icon.svg" alt="">
+         <div class="kobweb-col kobweb-arrange-top kobweb-align-start">
+          <p style="margin: 0px; font-family: Roboto, system-ui; width: 100%; font-size: 30px; font-weight: bolder; color: rgb(0, 167, 142);">120</p>
+          <p class="about-text" style="margin: 0px; font-family: Roboto, system-ui; width: 100%; font-size: 16px; font-weight: normal; color: rgb(18, 29, 52); opacity: 0.5;">Completed Projects</p>
+         </div>
+        </div>
+        <div class="kobweb-row kobweb-arrange-start kobweb-align-center-vert" style="margin: 0px 25px 0px 0px;">
+         <img class="silk-image" style="width: 70px; height: 70px; margin: 0px 20px 0px 0px;" src="shield_icon.svg" alt="">
+         <div class="kobweb-col kobweb-arrange-top kobweb-align-start">
+          <p style="margin: 0px; font-family: Roboto, system-ui; width: 100%; font-size: 30px; font-weight: bolder; color: rgb(0, 167, 142);">12</p>
+          <p class="about-text" style="margin: 0px; font-family: Roboto, system-ui; width: 100%; font-size: 16px; font-weight: normal; color: rgb(18, 29, 52); opacity: 0.5;">Active Projects</p>
+         </div>
+        </div>
+        <div class="kobweb-row kobweb-arrange-start kobweb-align-center-vert" style="margin: 0px 25px 0px 0px;">
+         <img class="silk-image" style="width: 70px; height: 70px; margin: 0px 20px 0px 0px;" src="happy_icon.svg" alt="">
+         <div class="kobweb-col kobweb-arrange-top kobweb-align-start">
+          <p style="margin: 0px; font-family: Roboto, system-ui; width: 100%; font-size: 30px; font-weight: bolder; color: rgb(0, 167, 142);">42</p>
+          <p class="about-text" style="margin: 0px; font-family: Roboto, system-ui; width: 100%; font-size: 16px; font-weight: normal; color: rgb(18, 29, 52); opacity: 0.5;">Satisfied Clients</p>
+         </div>
+        </div>
+        <div class="kobweb-row kobweb-arrange-start kobweb-align-center-vert">
+         <img class="silk-image" style="width: 70px; height: 70px; margin: 0px 20px 0px 0px;" src="user_icon.svg" alt="">
+         <div class="kobweb-col kobweb-arrange-top kobweb-align-start">
+          <p style="margin: 0px; font-family: Roboto, system-ui; width: 100%; font-size: 30px; font-weight: bolder; color: rgb(0, 167, 142);">10</p>
+          <p class="about-text" style="margin: 0px; font-family: Roboto, system-ui; width: 100%; font-size: 16px; font-weight: normal; color: rgb(18, 29, 52); opacity: 0.5;">Team Members</p>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="kobweb-box kobweb-align-top-center" style="max-width: 1920px; padding: 100px 0px;" id="service">
+       <div class="kobweb-col kobweb-arrange-top kobweb-align-center-horiz" style="width: 90%;">
+        <div class="kobweb-col kobweb-arrange-top kobweb-align-center-horiz" style="margin: 0px 0px 25px;">
+         <p style="width: 100%; font-family: Roboto, system-ui; font-weight: normal; margin: 0px; font-size: 25px; color: rgb(0, 167, 142); text-align: center;">Testimonial</p>
+         <p style="width: 100%; font-family: Roboto, system-ui; font-weight: bold; margin: 0px 0px 10px; font-size: 40px; text-align: center; color: rgb(18, 29, 52);">Happy Customers</p>
+         <div class="kobweb-box kobweb-align-top-start" style="height: 2px; width: 80px; border-radius: 50px; background-color: rgb(0, 167, 142);"></div>
+        </div>
+        <div class="silk-simple-grid silk-simple-grid-base-1 silk-simple-grid-md-2" style="margin: 0px 0px 20px;">
+         <div class="kobweb-row kobweb-arrange-start kobweb-align-top" style="margin: 0px 25px 0px 0px; opacity: 0.45; transition: opacity 200ms ease 0s;">
+          <img class="silk-image" style="margin: 0px 20px 0px 0px; max-width: 160px; border-radius: 60px 60px 0px;" src="avatar1.png" alt="">
+          <div class="kobweb-row kobweb-arrange-start kobweb-align-top" style="width: 100%; max-width: 350px;">
+           <div class="kobweb-col kobweb-arrange-top kobweb-align-start" style="width: 100%;">
+            <div class="kobweb-row kobweb-arrange-start kobweb-align-top" style="width: 100%; margin: 0px 0px 25px;">
+             <div class="kobweb-col kobweb-arrange-top kobweb-align-start">
+              <p style="margin: 0px; font-family: Roboto, system-ui; font-size: 18px; font-weight: bold; color: rgb(18, 29, 52);">Milica Ilic</p>
+              <p style="margin: 0px; font-family: Roboto, system-ui; font-size: 12px; font-weight: normal; color: rgb(18, 29, 52);">Web Designer</p>
+             </div>
+             <div class="kobweb-spacer"></div>
+             <div class="kobweb-row kobweb-arrange-start kobweb-align-top">
+              <img class="silk-image" style="width: 16px; height: 16px; margin: 0px;" src="star_icon.svg" alt="">
+              <img class="silk-image" style="width: 16px; height: 16px; margin: 0px;" src="star_icon.svg" alt="">
+              <img class="silk-image" style="width: 16px; height: 16px; margin: 0px;" src="star_icon.svg" alt="">
+              <img class="silk-image" style="width: 16px; height: 16px; margin: 0px;" src="star_icon.svg" alt="">
+              <img class="silk-image" style="width: 16px; height: 16px; margin: 0px;" src="star_icon.svg" alt="">
+             </div>
+            </div>
+            <p style="margin: 0px; font-family: Roboto, system-ui; font-size: 12px; width: 100%; font-weight: normal; color: rgb(18, 29, 52);">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+           </div>
+          </div>
+         </div>
+         <div class="kobweb-row kobweb-arrange-start kobweb-align-top" style="margin: 0px 25px 0px 0px; opacity: 0.45; transition: opacity 200ms ease 0s;">
+          <img class="silk-image" style="margin: 0px 20px 0px 0px; max-width: 160px; border-radius: 60px 60px 0px;" src="avatar2.png" alt="">
+          <div class="kobweb-row kobweb-arrange-start kobweb-align-top" style="width: 100%; max-width: 350px;">
+           <div class="kobweb-col kobweb-arrange-top kobweb-align-start" style="width: 100%;">
+            <div class="kobweb-row kobweb-arrange-start kobweb-align-top" style="width: 100%; margin: 0px 0px 25px;">
+             <div class="kobweb-col kobweb-arrange-top kobweb-align-start">
+              <p style="margin: 0px; font-family: Roboto, system-ui; font-size: 18px; font-weight: bold; color: rgb(18, 29, 52);">Stefan Jovanovic</p>
+              <p style="margin: 0px; font-family: Roboto, system-ui; font-size: 12px; font-weight: normal; color: rgb(18, 29, 52);">Android Developer</p>
+             </div>
+             <div class="kobweb-spacer"></div>
+             <div class="kobweb-row kobweb-arrange-start kobweb-align-top">
+              <img class="silk-image" style="width: 16px; height: 16px; margin: 0px;" src="star_icon.svg" alt="">
+              <img class="silk-image" style="width: 16px; height: 16px; margin: 0px;" src="star_icon.svg" alt="">
+              <img class="silk-image" style="width: 16px; height: 16px; margin: 0px;" src="star_icon.svg" alt="">
+              <img class="silk-image" style="width: 16px; height: 16px; margin: 0px;" src="star_icon.svg" alt="">
+              <img class="silk-image" style="width: 16px; height: 16px; margin: 0px;" src="star_icon.svg" alt="">
+             </div>
+            </div>
+            <p style="margin: 0px; font-family: Roboto, system-ui; font-size: 12px; width: 100%; font-weight: normal; color: rgb(18, 29, 52);">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="kobweb-row kobweb-arrange-start kobweb-align-top">
+         <div class="kobweb-box kobweb-align-top-start" style="margin: 0px 10px 0px 0px; cursor: pointer; width: 12px; height: 12px; border-radius: 50px; background-color: rgb(0, 167, 142);"></div>
+         <div class="kobweb-box kobweb-align-top-start" style="margin: 0px 10px 0px 0px; cursor: pointer; width: 12px; height: 12px; border-radius: 50px; background-color: rgb(237, 237, 237);"></div>
+         <div class="kobweb-box kobweb-align-top-start" style="margin: 0px 10px 0px 0px; cursor: pointer; width: 12px; height: 12px; border-radius: 50px; background-color: rgb(237, 237, 237);"></div>
+         <div class="kobweb-box kobweb-align-top-start" style="margin: 0px 10px 0px 0px; cursor: pointer; width: 12px; height: 12px; border-radius: 50px; background-color: rgb(237, 237, 237);"></div>
+        </div>
+       </div>
+      </div>
+      <div class="kobweb-box kobweb-align-top-center" style="max-width: 1920px; padding: 100px 0px;" id="experience">
+       <div class="kobweb-col kobweb-arrange-top kobweb-align-start" style="width: 60%;">
+        <div class="kobweb-col kobweb-arrange-top kobweb-align-start" style="margin: 0px 0px 25px;">
+         <p style="width: 100%; font-family: Roboto, system-ui; font-weight: normal; margin: 0px; font-size: 25px; color: rgb(0, 167, 142); text-align: start;">Experience</p>
+         <p style="width: 100%; font-family: Roboto, system-ui; font-weight: bold; margin: 0px 0px 10px; font-size: 40px; text-align: start; color: rgb(18, 29, 52);">Work Experience</p>
+         <div class="kobweb-box kobweb-align-top-start" style="height: 2px; width: 80px; border-radius: 50px; background-color: rgb(0, 167, 142);"></div>
+        </div>
+        <div class="silk-simple-grid silk-simple-grid-base-1 silk-simple-grid-md-2" style="width: 100%;">
+         <div class="kobweb-box kobweb-align-top-start" style="margin: 40px 0px; padding: 14px; background-color: rgb(0, 167, 142);">
+          <p style="margin: 0px; font-family: Roboto, system-ui; font-size: 14px; line-height: 1.6; font-weight: normal; color: rgb(249, 249, 249);">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+         </div>
+         <div class="kobweb-row kobweb-arrange-start kobweb-align-center-vert" style="width: 100%; margin: 0px 0px 0px 40px;">
+          <div class="kobweb-box kobweb-align-center" style="height: 100%; margin: 0px 14px 0px 0px;">
+           <div class="kobweb-box kobweb-align-top-start" style="height: 100%; width: 3px; background-color: rgb(0, 167, 142);"></div>
+           <div class="kobweb-box kobweb-align-center" style="width: 40px; height: 40px; border-radius: 50%; background-color: rgb(0, 167, 142); border: 3px solid rgb(0, 167, 142);">
+            <p style="margin: 0px; font-family: Roboto, system-ui; font-size: 16px; font-weight: bold; color: rgb(249, 249, 249);">01</p>
+           </div>
+          </div>
+          <div class="kobweb-col kobweb-arrange-center kobweb-align-start" style="width: 100%; height: 100%; margin: 0px 0px 0px 300px; transition: margin 500ms ease 0ms;">
+           <p style="margin: 0px; font-family: Roboto, system-ui; font-size: 20px; font-weight: bold; color: rgb(18, 29, 52);">Kotlin Multi-Platform Developer</p>
+           <p style="margin: 0px; font-family: Roboto, system-ui; font-size: 14px; font-weight: normal; color: rgb(18, 29, 52);">February 2022 NOW</p>
+           <p style="margin: 0px; font-family: Roboto, system-ui; font-size: 14px; font-weight: normal; color: rgb(0, 167, 142);">Google</p>
+          </div>
+         </div>
+        </div>
+        <div class="silk-simple-grid silk-simple-grid-base-1 silk-simple-grid-md-2" style="width: 100%;">
+         <div class="kobweb-box kobweb-align-top-start" style="margin: 40px 0px; padding: 14px; background-color: rgb(249, 249, 249);">
+          <p style="margin: 0px; font-family: Roboto, system-ui; font-size: 14px; line-height: 1.6; font-weight: normal; color: rgb(18, 29, 52);">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+         </div>
+         <div class="kobweb-row kobweb-arrange-start kobweb-align-center-vert" style="width: 100%; margin: 0px 0px 0px 40px;">
+          <div class="kobweb-box kobweb-align-center" style="height: 100%; margin: 0px 14px 0px 0px;">
+           <div class="kobweb-box kobweb-align-top-start" style="height: 100%; width: 3px; background-color: rgb(0, 167, 142);"></div>
+           <div class="kobweb-box kobweb-align-center" style="width: 40px; height: 40px; border-radius: 50%; background-color: rgb(255, 255, 255); border: 3px solid rgb(0, 167, 142);">
+            <p style="margin: 0px; font-family: Roboto, system-ui; font-size: 16px; font-weight: bold; color: rgb(0, 167, 142);">02</p>
+           </div>
+          </div>
+          <div class="kobweb-col kobweb-arrange-center kobweb-align-start" style="width: 100%; height: 100%; margin: 0px 0px 0px 300px; transition: margin 500ms ease 80ms;">
+           <p style="margin: 0px; font-family: Roboto, system-ui; font-size: 20px; font-weight: bold; color: rgb(18, 29, 52);">Mobile Developer</p>
+           <p style="margin: 0px; font-family: Roboto, system-ui; font-size: 14px; font-weight: normal; color: rgb(18, 29, 52);">January 2021 October 2021</p>
+           <p style="margin: 0px; font-family: Roboto, system-ui; font-size: 14px; font-weight: normal; color: rgb(0, 167, 142);">Facebook</p>
+          </div>
+         </div>
+        </div>
+        <div class="silk-simple-grid silk-simple-grid-base-1 silk-simple-grid-md-2" style="width: 100%;">
+         <div class="kobweb-box kobweb-align-top-start" style="margin: 40px 0px; padding: 14px; background-color: rgb(249, 249, 249);">
+          <p style="margin: 0px; font-family: Roboto, system-ui; font-size: 14px; line-height: 1.6; font-weight: normal; color: rgb(18, 29, 52);">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+         </div>
+         <div class="kobweb-row kobweb-arrange-start kobweb-align-center-vert" style="width: 100%; margin: 0px 0px 0px 40px;">
+          <div class="kobweb-box kobweb-align-center" style="height: 100%; margin: 0px 14px 0px 0px;">
+           <div class="kobweb-box kobweb-align-top-start" style="height: 100%; width: 3px; background-color: rgb(0, 167, 142);"></div>
+           <div class="kobweb-box kobweb-align-center" style="width: 40px; height: 40px; border-radius: 50%; background-color: rgb(255, 255, 255); border: 3px solid rgb(0, 167, 142);">
+            <p style="margin: 0px; font-family: Roboto, system-ui; font-size: 16px; font-weight: bold; color: rgb(0, 167, 142);">03</p>
+           </div>
+          </div>
+          <div class="kobweb-col kobweb-arrange-center kobweb-align-start" style="width: 100%; height: 100%; margin: 0px 0px 0px 300px; transition: margin 500ms ease 160ms;">
+           <p style="margin: 0px; font-family: Roboto, system-ui; font-size: 20px; font-weight: bold; color: rgb(18, 29, 52);">Freelancer</p>
+           <p style="margin: 0px; font-family: Roboto, system-ui; font-size: 14px; font-weight: normal; color: rgb(18, 29, 52);">March 2020 August 2020</p>
+           <p style="margin: 0px; font-family: Roboto, system-ui; font-size: 14px; font-weight: normal; color: rgb(0, 167, 142);">Netflix</p>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="kobweb-box kobweb-align-top-center" style="max-width: 1920px; padding: 100px 0px;" id="contact">
+       <div class="kobweb-col kobweb-arrange-top kobweb-align-center-horiz" style="width: 60%;">
+        <div class="kobweb-col kobweb-arrange-top kobweb-align-center-horiz" style="width: 100%; margin: 0px 0px 25px;">
+         <p style="width: 100%; font-family: Roboto, system-ui; font-weight: normal; margin: 0px; font-size: 25px; color: rgb(0, 167, 142); text-align: center;">Contact me</p>
+         <p style="width: 100%; font-family: Roboto, system-ui; font-weight: bold; margin: 0px 0px 10px; font-size: 40px; text-align: center; color: rgb(18, 29, 52);">Get in Touch</p>
+         <div class="kobweb-box kobweb-align-top-start" style="height: 2px; width: 80px; border-radius: 50px; background-color: rgb(0, 167, 142);"></div>
+        </div>
+        <form action="https://formspree.io/f/xbjenpjo" method="POST">
+         <label class="form-label" for="InputName">Name</label>
+         <input class="input form-control" style="box-shadow: 0px 0px 0px 0px; width: 500px; margin: 0px 0px 10px; background-color: rgb(249, 249, 249);" type="text" id="InputName" placeholder="Full Name" name="Full Name" required="true"><label class="form-label" for="InputEmail">Email</label>
+         <input class="input form-control" style="box-shadow: 0px 0px 0px 0px; width: 500px; margin: 0px 0px 10px; background-color: rgb(249, 249, 249);" type="email" id="InputEmail" placeholder="Email Address" name="Email" required="true"><label class="form-label" for="InputMessage">Message</label><textarea class="input form-control" style="box-shadow: 0px 0px 0px 0px; height: 150px; min-height: 80px; width: 500px; margin: 0px 0px 20px; background-color: rgb(249, 249, 249);" id="InputMessage" placeholder="Your Message" name="Message" required="true"></textarea>
+         <div class="kobweb-row kobweb-arrange-center kobweb-align-top" style="width: 100%;">
+          <button class="main-button" style="height: 40px; background-color: rgb(0, 167, 142); border-radius: 5px; border: 0px; color: rgb(255, 255, 255); cursor: pointer;">Submit</button>
+         </div>
+        </form>
+       </div>
+      </div>
+      <div class="kobweb-box kobweb-align-top-center" style="width: 100%; max-width: 1920px; padding: 100px 0px; background-color: rgb(237, 237, 237);">
+       <div class="kobweb-col kobweb-arrange-top kobweb-align-center-horiz" style="width: 90%;">
+        <img class="silk-image" style="width: 100px; height: 100px;" src="logo.svg" alt="">
+        <div class="kobweb-row kobweb-arrange-center kobweb-align-top">
+         <a class="silk-link silk-link_light navigation-item" style="font-family: Roboto, system-ui; font-size: 12px; font-weight: normal; margin: 0px 20px 0px 0px; text-decoration-line: none;" href="#home">Home</a><a class="silk-link silk-link_light navigation-item" style="font-family: Roboto, system-ui; font-size: 12px; font-weight: normal; margin: 0px 20px 0px 0px; text-decoration-line: none;" href="#about">About me</a><a class="silk-link silk-link_light navigation-item" style="font-family: Roboto, system-ui; font-size: 12px; font-weight: normal; margin: 0px 20px 0px 0px; text-decoration-line: none;" href="#service">Service</a><a class="silk-link silk-link_light navigation-item" style="font-family: Roboto, system-ui; font-size: 12px; font-weight: normal; margin: 0px 20px 0px 0px; text-decoration-line: none;" href="#portfolio">Portfolio</a><a class="silk-link silk-link_light navigation-item" style="font-family: Roboto, system-ui; font-size: 12px; font-weight: normal; margin: 0px 20px 0px 0px; text-decoration-line: none;" href="#experience">Experience</a><a class="silk-link silk-link_light navigation-item" style="font-family: Roboto, system-ui; font-size: 12px; font-weight: normal; margin: 0px 20px 0px 0px; text-decoration-line: none;" href="#contact">Contact me</a>
+        </div>
+        <div style="padding: 20px 0px 0px;"></div>
+        <div class="kobweb-row kobweb-arrange-center kobweb-align-center-vert" style="padding: 0px 25px; min-height: 40px; border-radius: 20px; background-color: rgb(255, 255, 255);">
+         <a class="silk-link silk-link_light" href="https://funyinkash.com"><span class="social-link fab fa-facebook fa-lg" style="margin: 0px 40px 0px 0px;"></span></a><a class="silk-link silk-link_light" href="https://funyinkash.com"><span class="social-link fab fa-twitter fa-lg" style="margin: 0px 40px 0px 0px;"></span></a><a class="silk-link silk-link_light" href="https://funyinkash.com"><span class="social-link fab fa-instagram fa-lg" style="margin: 0px 40px 0px 0px;"></span></a><a class="silk-link silk-link_light" href="https://funyinkash.com"><span class="social-link fab fa-linkedin fa-lg"></span></a>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="kobweb-box kobweb-align-bottom-end" style="width: 100%; height: 100%; z-index: 1; position: fixed; pointer-events: none;">
+      <div class="back-to-top-buton kobweb-box kobweb-align-center" style="z-index: 1; pointer-events: auto; width: 50px; height: 50px; background-color: rgb(0, 167, 142); visibility: hidden; border-radius: 20%; margin: 0px 40px 40px 0px; cursor: pointer;">
+       <span class="fas fa-arrow-up fa-lg" style="color: rgb(255, 255, 255);"></span>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div> 
+  <script src="/san.js"></script> 
+ </body>
+</html>
